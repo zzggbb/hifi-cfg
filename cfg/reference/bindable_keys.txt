@@ -1,0 +1,51 @@
+All non-obvious keybind names. Anything not listed is the same as what appears on a keyboard.
+
+Keyboard Key	            Names of Keybind
+--------------------------------------------
+;	                        SEMICOLON
+Backspace	                BACKSPACE
+Delete	                    DEL
+Down Arrow	                DOWNARROW
+End	                        END
+Escape                      ESCAPE
+Home	                    HOME
+Insert	                    INS
+Left Alt	                ALT
+Left Arrow	                LEFTARROW
+Left Ctrl	                CTRL
+Left Shift	                SHIFT
+Mouse Extra Button 1	    MOUSE4
+Mouse Extra Button 2	    MOUSE5
+Mouse Left Click	        MOUSE1
+Mouse Right Click	        MOUSE2
+Mouse Wheel Click	        MOUSE3
+Mouse Wheel Down	        MWHEELDOWN
+Mouse Wheel Up	            MWHEELUP
+Numpad *	                KP_MULTIPLY
+Numpad +	                KP_PLUS
+Numpad -	                KP_MINUS
+Numpad .	                KP_DEL
+Numpad /	                KP_SLASH
+Numpad 0	                KP_INS
+Numpad 1	                KP_END
+Numpad 2	                KP_DOWNARROW
+Numpad 3	                KP_PGDN
+Numpad 4	                KP_LEFTARROW
+Numpad 5	                KP_5
+Numpad 6	                KP_RIGHTARROW
+Numpad 7	                KP_HOME
+Numpad 8	                KP_UPARROW
+Numpad 9	                KP_PGUP
+Numpad Enter	            KP_ENTER
+Page Down	                PGDN
+Page Up	                    PGUP
+Pause/Break/Numlock	        NUMLOCK
+Right Alt	                RALT
+Right Arrow	                RIGHTARROW
+Right Control	            RCTRL
+Right Shift	                RSHIFT
+Scroll Lock	                SCROLLLOCK
+Spacebar                    SPACE
+Tab	                        TAB
+Up Arrow	                UPARROW
+--------------------------------------------

@@ -1,0 +1,20 @@
+// two key modifying
+
+alias "<action 1>" "<some command>"
+alias "<action 2>" "<some other command>"
+alias "+modify" "alias <alterable action> <action 2>"
+alias "-modify" "alias <alterable action> <action 1>
+
+bind "<key 1>" "<alterable action>"
+bind "<key 2>" "+modify"
+
+// single key modifying/double tap
+
+alias "<action 1>"		"<do thing 1>"
+alias "<action 2>"		"<do thing 2>"
+alias "modify_1"		"<action 2>; alias modifier modify_proxy"
+alias "modify_proxy" 	"alias modifier modify_2"
+alias "modify_2"		"<action 2>; alias modifier modify_1"
+alias "modifier"		"modify_1"
+
+bind "<key>"	"modifier"

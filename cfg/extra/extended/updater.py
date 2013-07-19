@@ -1,7 +1,7 @@
 import datetime
 import os
 
-path = "C:/Program Files (x86)/Steam/steamapps/common/Team Fortress 2/tf/custom/custom_configs/cfg/extended/updater.cfg"
+path = "C:/Program Files (x86)/Steam/steamapps/common/Team Fortress 2/tf/custom/custom_configs/cfg/extra/extended/updater.cfg"
 garbage = "C:/Program Files (x86)/Steam/steamapps/common/Team Fortress 2/tf/garbage.log"
 if os.path.isfile(garbage):
         os.remove(garbage)

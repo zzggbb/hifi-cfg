@@ -318,11 +318,11 @@ cl_clockdrift_max_ms_threadmode          : 0        : , "cheat"        : Maximum
 cl_cmdrate                               : 100      : , "a", "user"    : Max number of command packets sent to server per second
 cl_coach_find_coach                      : cmd      :                  : Request a coach for the current game
 cl_coach_toggle                          : cmd      :                  : Toggle coach status
-cl_crosshair_blue                        : 255      : , "a", "cl"      : 
+cl_crosshair_blue                        : 0        : , "a", "cl"      : 
 cl_crosshair_file                        : 0        : , "a", "cl"      : 
-cl_crosshair_green                       : 0        : , "a", "cl"      : 
-cl_crosshair_red                         : 255      : , "a", "cl"      : 
-cl_crosshair_scale                       : 28       : , "a", "cl"      : 
+cl_crosshair_green                       : 255      : , "a", "cl"      : 
+cl_crosshair_red                         : 0        : , "a", "cl"      : 
+cl_crosshair_scale                       : 24       : , "a", "cl"      : 
 cl_crosshairalpha                        : 200      : , "a", "cl"      : 
 cl_crosshaircolor                        : 0        : , "a", "cl"      : 
 cl_customsounds                          : 0        : , "cl"           : Enable customized player sound playback
@@ -1001,7 +1001,7 @@ mat_bumpbasis                            : 0        : , "cheat"        :
 mat_bumpmap                              : 0        :                  : 
 mat_camerarendertargetoverlaysize        : 256      : , "cheat", "cl"  : 
 mat_clipz                                : 1        : , "cl"           : 
-mat_colcorrection_disableentities        : 1        :                  : Disable map color-correction entities
+mat_colcorrection_disableentities        : 0        :                  : Disable map color-correction entities
 mat_color_projection                     : 0        : , "a"            : 
 mat_colorcorrection                      : 0        :                  : 
 mat_compressedtextures                   : 1        :                  : 
@@ -3056,7 +3056,7 @@ viewanim_load                            : cmd      :                  : load an
 viewanim_reset                           : cmd      :                  : reset view angles!
 viewanim_save                            : cmd      :                  : Save current animation to file
 viewanim_test                            : cmd      :                  : test view animation
-viewmodel_fov                            : 95       : , "a", "cl"      : 
+viewmodel_fov                            : 97       : , "a", "cl"      : 
 viewmodel_fov_demo                       : 54       : , "a", "cl"      : 
 violence_ablood                          : 0        :                  : Draw alien blood
 violence_agibs                           : 0        :                  : Show alien gib entities
@@ -3066,7 +3066,7 @@ voice_avggain                            : 0        :                  :
 voice_clientdebug                        : 0        : , "cl"           : 
 voice_debugfeedback                      : 0        :                  : 
 voice_debugfeedbackfrom                  : 0        :                  : 
-voice_enable                             : 1        : , "a"            : 
+voice_enable                             : 0        : , "a"            : 
 voice_fadeouttime                        : 0        :                  : 
 voice_forcemicrecord                     : 0        : , "a"            : 
 voice_inputfromfile                      : 0        :                  : Get voice input from 'voice_input.wav' rather than from the microphone.

@@ -267,7 +267,7 @@ cc_captiontrace                          : 0        : , "cl"           : Show mi
 cc_emit                                  : cmd      :                  : Emits a closed caption
 cc_findsound                             : cmd      :                  : Searches for soundname which emits specified text.
 cc_flush                                 : cmd      :                  : Flushes async'd captions.
-cc_lang                                  : 0        : , "a", "cl"      : Current close caption language (emtpy = use game UI language)
+cc_lang                                  : 0        : , "a", "cl"      : Current close caption language (empty = use game UI language)
 cc_linger_time                           : 1        : , "a", "cl"      : Close caption linger time.
 cc_minvisibleitems                       : 1        : , "cl"           : Minimum number of caption items to show.
 cc_predisplay_time                       : 0        : , "a", "cl"      : Close caption delay before showing caption.

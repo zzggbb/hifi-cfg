@@ -1,0 +1,19 @@
+// two key modifying
+
+alias "action_1" 	"thing_1"
+alias "action_2" 	"thing_2"
+alias "+modify" 	"alias action action_2"
+alias "-modify" 	"alias action action_1"
+alias action 		action_1
+bind "key_1" "action"
+bind "key_2" "+modify"
+
+// single key modifying
+
+alias "action_1"		"thing_1"
+alias "action_2"		"thing_2"
+alias "modify_1"		"action_1; alias modifier modify_proxy"
+alias "modify_proxy" 	"alias modifier modify_2"
+alias "modify_2"		"action_2; alias modifier modify_1"
+alias "modifier"		"modify_1"
+bind "key" "modifier"

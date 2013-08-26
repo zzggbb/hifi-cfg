@@ -1,4 +1,0 @@
-    alias "?_toggle" 		"?_toggle_on"
-    alias "?_toggle_on" 	"<thing 1>; alias ?_toggle ?_toggle_off"
-    alias "?_toggle_off" 	"<thing 2>; alias ?_toggle ?_toggle_on"
-    bind "<key>" "?_toggle"

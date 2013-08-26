@@ -754,7 +754,7 @@ gameui_activate                          : cmd      :                  : Shows t
 gameui_allowescape                       : cmd      :                  : Escape key allowed to hide game UI
 gameui_allowescapetoshow                 : cmd      :                  : Escape key allowed to show game UI
 gameui_hide                              : cmd      :                  : Hides the game UI
-gameui_hide_dialog                       : cmd      :                  : asdf
+gameui_hide_dialog                       : cmd      :                  : 
 gameui_preventescape                     : cmd      :                  : Escape key doesn't hide game UI
 gameui_preventescapetoshow               : cmd      :                  : Escape key doesn't show game UI
 gameui_show_dialog                       : cmd      :                  : Show an arbitrary Dialog.

@@ -1,0 +1,4 @@
+alias "toggle_1" 	"thing_1; alias toggle toggle_0"
+alias "toggle_0" 	"thing_0; alias toggle toggle_1"
+alias "toggle" 		"toggle_1"
+bind key toggle

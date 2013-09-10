@@ -1,4 +1,20 @@
 cfg\
+	autoexec.cfg
+	demoman.cfg
+	engineer.cfg
+	heavyweapons.cfg
+	listenserver.cfg
+	medic.cfg
+	mtp.cfg
+	print.txt
+	print2.txt
+	pyro.cfg
+	scout.cfg
+	sniper.cfg
+	soldier.cfg
+	spectator.cfg
+	spy.cfg
+	
 	conf\
 		class\
 			s_dingaling.cfg
@@ -21,6 +37,8 @@ cfg\
 			s_echo.cfg
 			s_graphics.cfg
 			s_master.cfg
+			s_server.cfg
+			s_spectator.cfg
 	core\
 		graphics\
 			chris\
@@ -39,35 +57,33 @@ cfg\
 			m0re\
 				fps_m0re.cfg
 				highfps_m0re.cfg
-		numpad\
-			class_team_select.cfg
-			demonstration_man.cfg
-			insults.cfg
-			item_preset_select.cfg
-			off.cfg
-			spectate.cfg
-			trivia.cfg
+		meta\
+			class\
+				class_master.cfg
+				conf_master.cfg
+				currents.cfg
+				global.cfg
+			schema\
+				schema_blank.cfg
+				schema_cyzer.cfg
 		plugins\
-			auto_detonate.cfg
-			auto_medic.cfg
-			demoknight.cfg
-			equalizer_call.cfg
-			guillotine.cfg
-			idle.cfg
-			intel_timepath.cfg
-			medic_chris.cfg
-			pyropanic.cfg
-			radar.cfg
-			regen.cfg
-			reverse_heal.cfg
-			sentry_jump.cfg
-			stabbyscript.cfg
-			winger_jump.cfg
+			p_auto_detonate.cfg
+			p_auto_medic.cfg
+			p_demoknight.cfg
+			p_equalizer_call.cfg
+			p_guillotine.cfg
+			p_idle.cfg
+			p_intel_timepath.cfg
+			p_medic_chris.cfg
+			p_pyropanic.cfg
+			p_radar.cfg
+			p_regen.cfg
+			p_reverse_heal.cfg
+			p_sentry_jump.cfg
+			p_stabbyscript.cfg
+			p_winger_jump.cfg
 		lib.cfg
-		switcher.cfg
-	docs\
-		readme.txt
-	extra\
+	misc\
 		comp\
 			comp.cfg
 			jump.cfg
@@ -77,11 +93,15 @@ cfg\
 			script_cycler.cfg
 			xhair_cycler.cfg
 			xhair_cycler_reset.cfg
+		docs\
+			files.txt
+			readme.txt
 		extended\
 			updater.cfg
 			updater.py
 		reddit\
 			genemilder_vm.cfg
+			MilleyBear_fix.cfg
 			Murray0722_improve.cfg
 			oxjoe_tap.cfg
 			Plunderwondr_random.cfg
@@ -112,30 +132,3 @@ cfg\
 			self.cfg
 			vaccinator.cfg
 			wait_check.cfg
-	meta\
-		class\
-			class_master.cfg
-			conf_master.cfg
-			currents.cfg
-			global.cfg
-		schema\
-			schema_blank.cfg
-			schema_cyzer.cfg
-		paths.cfg
-
-
-	autoexec.cfg
-	demoman.cfg
-	engineer.cfg
-	heavyweapons.cfg
-	listenserver.cfg
-	medic.cfg
-	mtp.cfg
-	print.txt
-	print2.txt
-	pyro.cfg
-	scout.cfg
-	sniper.cfg
-	soldier.cfg
-	spectator.cfg
-	spy.cfg

@@ -1,0 +1,5 @@
+alias loop "<do X>; wait <Y*66>; redirect"
+alias redirect loop
+alias break "alias redirect loop"
+bind key "redirect"
+bind key "alias redirect break"

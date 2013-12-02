@@ -3,9 +3,3 @@ with open("cvar_list_07-21-13_03-16.log","r") as r:
 		content = r.readlines()
 		for i in content:
 			w.write(i.split(":")[0] + '\n')
-
-	'''
-	for i in content:
-		i = i.split(':')[0]
-		f.write(i)
-	'''

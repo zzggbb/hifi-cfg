@@ -4,11 +4,11 @@ for i in maplist:
     with open(("./all/" + i + ".cfg"), "w") as f:
         f.write("conf_" + i)
 
-longest = ""
+longer = ""
 for i in maplist:
-    if len(i) > len(longest):
-        longest = i
+    if len(i) > len(longer):
+        longer = i
 
 with open("./maps.cfg","w") as f:
     for i in maplist:
-        f.write(" alias conf_" + i + " "*(len(longest)-len(i)) + " \" \" " + "\n")
+        f.write(" alias conf_" + i + " "*(len(longer)-len(i)) + " \" \" \n")

@@ -1,23 +1,30 @@
 Using this config:
-	Any and all settings are in the 'conf' folder. If the setting is a class-specific one, it is probably inside 'conf/class'. Any other settings are inside of 'conf/game'.
+	Any and all settings are in the 'conf' folder. If the setting is a
+	class-specific one, it is probably inside 'conf/class'. Any other settings
+	are inside of 'conf/game'.
 
 	Changing Class-Specific Settings:
-		There are 14 class-specific settings files. EVERY settings file follows the same format of 9 aliases, one for each class.
-		For example, to edit scout settings, edit the '1-1_<setting>' alias in the appropriate setting file.
+		There are 14 class-specific settings files. EVERY settings file follows
+		the same format of 9 aliases, one for each class.
+		For example, to edit scout settings, edit the '1-1_<setting>' alias in
+		the appropriate setting file.
 
 			dingaling:
 				customize dingaling and hitsound related cvars.
 			function_keys:
-				customize what the function keys are bound to. Stick to editing the alias AFTER the 'fn_<number>' alias.
+				customize what the function keys are bound to. Stick to editing
+				the alias AFTER the 'fn_<number>' alias.
 			jump:
-				customize what type of jumping is done when (by default) the spacebar is pressed.
+				customize what type of jumping is done when (by default) the
+				spacebar is pressed.
 				Possible values for the class aliases:
 					jump_default
 					jump_cjump
 					jump_ctap
 			masking:
 				customize the voicemenu voice used in voicemasking.
-				The voice_mask alias will cycle through each of the three aliases when used.
+				The voice_mask alias will cycle through each of the three
+				aliases when used.
 			mouse:
 				customize how the game reacts to different mouse buttons.
 			network:
@@ -56,11 +63,13 @@ Using this config:
 					sensitivity <0...INFINITY>
 			swap:
 				customize how the (by default) q key behaves.
-				The next_wep and prev_wep aliases can be any of the following aliases:
+				The next_wep and prev_wep aliases can be any of the following
+				aliases:
 					weapon1
 					weapon2
 					weapon3
-				next_wep and prev_wep specify which TWO weapons to cycle between when using quickswitch.
+				next_wep and prev_wep specify which TWO weapons to cycle between
+				when using quickswitch.
 			voice:
 				customize what the (by default) v key does.
 				Possible values for the class aliases:
@@ -122,5 +131,6 @@ Using this config:
 
 	Other info:
 
-		If you don't know what an alias does (trust me, the time will come), check 'core/meta/lib'.
+		If you don't know what an alias does (trust me, the time will come),
+		check 'core/meta/lib'.
 		A very large majority of VERY USEFUL aliases are inside that file.

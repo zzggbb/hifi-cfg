@@ -319,11 +319,11 @@ cl_clockdrift_max_ms_threadmode          : 0        : , "cheat"        : Maximum
 cl_cmdrate                               : 100      : , "a", "user"    : Max number of command packets sent to server per second
 cl_coach_find_coach                      : cmd      :                  : Request a coach for the current game
 cl_coach_toggle                          : cmd      :                  : Toggle coach status
-cl_crosshair_blue                        : 0        : , "a", "cl"      :
+cl_crosshair_blue                        : 255      : , "a", "cl"      :
 cl_crosshair_file                        : 0        : , "a", "cl"      :
 cl_crosshair_green                       : 255      : , "a", "cl"      :
 cl_crosshair_red                         : 0        : , "a", "cl"      :
-cl_crosshair_scale                       : 24       : , "a", "cl"      :
+cl_crosshair_scale                       : 28       : , "a", "cl"      :
 cl_crosshairalpha                        : 200      : , "a", "cl"      :
 cl_crosshaircolor                        : 0        : , "a", "cl"      :
 cl_customsounds                          : 0        : , "cl"           : Enable customized player sound playback
@@ -378,7 +378,7 @@ cl_ignorepackets                         : 0        : , "cheat"        : Force c
 cl_interp                                : 0        : , "user", "cl"   : Sets the interpolation amount (bounded on low side by server interp ratio settings).
 cl_interp_all                            : 0        : , "cl"           : Disable interpolation list optimizations.
 cl_interp_npcs                           : 0        : , "user", "cl"   : Interpolate NPC positions starting this many seconds in past (or cl_interp, if greater)
-cl_interp_ratio                          : 2        : , "user", "cl"   : Sets the interpolation amount (final amount is cl_interp_ratio / cl_updaterate).
+cl_interp_ratio                          : 1        : , "user", "cl"   : Sets the interpolation amount (final amount is cl_interp_ratio / cl_updaterate).
 cl_jiggle_bone_debug                     : 0        : , "cheat", "cl"  : Display physics-based 'jiggle bone' debugging information
 cl_jiggle_bone_debug_pitch_constraints   : 0        : , "cheat", "cl"  : Display physics-based 'jiggle bone' debugging information
 cl_jiggle_bone_debug_yaw_constraints     : 0        : , "cheat", "cl"  : Display physics-based 'jiggle bone' debugging information
@@ -462,9 +462,9 @@ cl_showpos                               : 0        : , "cl"           : Draw cu
 cl_ShowSunVectors                        : 0        : , "cl"           :
 cl_showtextmsg                           : 1        : , "cl"           : Enable/disable text messages printing on the screen.
 cl_sidespeed                             : 450      : , "sv", "cheat", "rep" :
-cl_smooth                                : 1        : , "cl"           : Smooth view/eye origin after prediction errors
+cl_smooth                                : 0        : , "cl"           : Smooth view/eye origin after prediction errors
 cl_smoothtime                            : 0        : , "cl"           : Smooth client's view after prediction error over this many seconds
-cl_software_cursor                       : 1        : , "a", "cl"      : Switches the game to use a larger software cursor instead of the normal OS cursor
+cl_software_cursor                       : 0        : , "a", "cl"      : Switches the game to use a larger software cursor instead of the normal OS cursor
 cl_soundemitter_flush                    : cmd      :                  : Flushes the sounds.txt system (client only)
 cl_soundfile                             : 0        : , "a"            : Jingle sound file.
 cl_soundscape_flush                      : cmd      :                  : Flushes the client side soundscapes
@@ -493,7 +493,7 @@ cl_vote_ui_active_after_voting           : 0        : , "cl"           :
 cl_vote_ui_show_notification             : 0        : , "cl"           :
 cl_winddir                               : 0        : , "cheat", "cl"  : Weather effects wind direction angle
 cl_windspeed                             : 0        : , "cheat", "cl"  : Weather effects wind speed scalar
-cl_yawspeed                              : 210      : , "cl"           : Client yaw speed.
+cl_yawspeed                              : 150      : , "cl"           : Client yaw speed.
 clear                                    : cmd      :                  : Clear all console output.
 clear_debug_overlays                     : cmd      :                  : clears debug overlays
 clientport                               : 27005    :                  : Host game client port
@@ -548,7 +548,7 @@ debug_physimpact                         : 0        : , "sv"           :
 debug_touchlinks                         : 0        : , "sv"           : Spew touch link activity
 debugsystemui                            : cmd      :                  : Show/hide the debug system UI.
 decalfrequency                           : 10       : , "sv", "nf"     :
-default_fov                              : 75       : , "cheat", "cl"  :
+default_fov                              : 90       : , "cheat", "cl"  :
 demo_avellimit                           : 2000     :                  : Angular velocity limit before eyes considered snapped for demo playback.
 demo_debug                               : 0        :                  : Demo debug info.
 demo_fastforwardfinalspeed               : 20       :                  : Go this fast when starting to hold FF button.
@@ -599,7 +599,7 @@ dsp_mix_min                              : 0        : , "demo"         :
 dsp_off                                  : 0        : , "cheat"        :
 dsp_player                               : 0        : , "demo", "server_can_execute" :
 dsp_reload                               : cmd      :                  :
-dsp_room                                 : 0        : , "demo"         :
+dsp_room                                 : 21       : , "demo"         :
 dsp_slow_cpu                             : 1        : , "a", "demo"    :
 dsp_spatial                              : 40       : , "demo"         :
 dsp_speaker                              : 50       : , "demo"         :
@@ -815,7 +815,7 @@ host_timer_report                        : cmd      :                  : Spew CP
 host_timer_spin_ms                       : 0        :                  : Use CPU busy-loop for improved timer precision (dedicated only)
 host_timescale                           : 1        : , "rep"          : Prescale the clock by this amount.
 host_writeconfig                         : cmd      :                  : Store current settings to config.cfg (or specified .cfg file).
-hostip                                   : 0        :                  : Host game server ip
+hostip                                   : -1062731520.000 :                  : Host game server ip
 hostname                                 : 0        :                  : Hostname for server.
 hostport                                 : 27015    :                  : Host game server port
 hud_achievement_count                    : 8        : , "a", "cl"      : Max number of achievements that can be shown on the HUD
@@ -927,7 +927,7 @@ joy_yawthreshold                         : 0        : , "a", "cl"      :
 joyadvancedupdate                        : cmd      :                  :
 joystick                                 : 0        : , "a", "cl"      :
 jpeg                                     : cmd      :                  : Take a jpeg screenshot:  jpeg <filename> <quality 1-100>.
-jpeg_quality                             : 90       :                  : jpeg screenshot quality.
+jpeg_quality                             : 100      :                  : jpeg screenshot quality.
 +jump                                    : cmd      :                  :
 -jump                                    : cmd      :                  :
 kdtree_test                              : cmd      :                  : Tests spatial partition for entities queries.
@@ -1067,7 +1067,7 @@ mat_filtertextures                       : 1        :                  :
 mat_force_bloom                          : 0        : , "cheat", "cl"  :
 mat_force_ps_patch                       : 0        :                  :
 mat_force_tonemap_scale                  : 0        : , "cheat"        :
-mat_forceaniso                           : 8        :                  :
+mat_forceaniso                           : 4        :                  :
 mat_forcedynamic                         : 0        : , "cheat"        :
 mat_forcehardwaresync                    : 1        :                  :
 mat_forcemanagedtextureintohardware      : 0        :                  :
@@ -1098,29 +1098,29 @@ mat_monitorgamma_tv_exp                  : 2        :                  :
 mat_monitorgamma_tv_range_max            : 255      :                  :
 mat_monitorgamma_tv_range_min            : 16       :                  :
 mat_morphstats                           : 0        : , "cheat"        :
-mat_motion_blur_enabled                  : 1        :                  :
-mat_motion_blur_falling_intensity        : 1        : , "cl"           :
-mat_motion_blur_falling_max              : 20       : , "cl"           :
-mat_motion_blur_falling_min              : 10       : , "cl"           :
+mat_motion_blur_enabled                  : 0        :                  :
+mat_motion_blur_falling_intensity        : 0        : , "cl"           :
+mat_motion_blur_falling_max              : 0        : , "cl"           :
+mat_motion_blur_falling_min              : 0        : , "cl"           :
 mat_motion_blur_forward_enabled          : 0        : , "cl"           :
-mat_motion_blur_percent_of_screen_max    : 4        :                  :
-mat_motion_blur_rotation_intensity       : 1        : , "cl"           :
-mat_motion_blur_strength                 : 1        : , "cl"           :
+mat_motion_blur_percent_of_screen_max    : 0        :                  :
+mat_motion_blur_rotation_intensity       : 0        : , "cl"           :
+mat_motion_blur_strength                 : 0        : , "cl"           :
 mat_non_hdr_bloom_scalefactor            : 0        : , "cl"           :
 mat_norendering                          : 0        : , "cheat"        :
 mat_normalmaps                           : 0        : , "cheat"        :
 mat_normals                              : 0        : , "cheat"        :
 mat_parallaxmap                          : 0        :                  :
 mat_phong                                : 1        :                  :
-mat_picmip                               : 0        :                  :
+mat_picmip                               : 2        :                  :
 mat_postprocess_x                        : 4        : , "cl"           :
 mat_postprocess_y                        : 1        : , "cl"           :
 mat_postprocessing_combine               : 1        : , "cl"           : Combine bloom, software anti-aliasing and color correction into one post-processing pass
 mat_powersavingsmode                     : 0        : , "a"            : Power Savings Mode
 mat_proxy                                : 0        : , "cheat"        :
-mat_queue_mode                           : -1       : , "a"            : The queue/thread mode the material system should use: -1=default, 0=synchronous single thread, 2=queued multithreaded
+mat_queue_mode                           : 2        : , "a"            : The queue/thread mode the material system should use: -1=default, 0=synchronous single thread, 2=queued multithreaded
 mat_queue_report                         : 0        : , "a"            : Report thread stalls.  Positive number will filter by stalls >= time in ms.  -1 reports all locks.
-mat_reducefillrate                       : 0        :                  :
+mat_reducefillrate                       : 1        :                  :
 mat_reduceparticles                      : 0        :                  :
 mat_reloadallmaterials                   : cmd      :                  : Reloads all materials
 mat_reloadmaterial                       : cmd      :                  : Reloads a single material
@@ -1182,7 +1182,7 @@ mat_tonemap_min_avglum                   : 3        : , "cheat", "cl"  :
 mat_tonemap_percent_bright_pixels        : 2        : , "cheat", "cl"  :
 mat_tonemap_percent_target               : 60       : , "cheat", "cl"  :
 mat_tonemapping_occlusion_use_stencil    : 0        :                  :
-mat_trilinear                            : 1        :                  :
+mat_trilinear                            : 0        :                  :
 mat_use_compressed_hdr_textures          : 1        :                  :
 mat_viewportscale                        : 1        : , "a", "cl"      : Scale down the main viewport (to reduce GPU impact on CPU profiling)
 mat_viewportupscale                      : 1        : , "a", "cl"      : Scale the viewport back up
@@ -1258,7 +1258,7 @@ mp_bonusroundtime                        : 15       : , "sv", "rep"    : Time af
 mp_chattime                              : 10       : , "sv", "rep"    : amount of time players can chat after the game is over
 mp_clan_ready_signal                     : 0        : , "sv"           : Text that team leader from each team must speak for the match to begin
 mp_clan_readyrestart                     : 0        : , "sv"           : If non-zero, game will restart once someone from each team gives the ready signal
-mp_decals                                : 9        : , "a"            :
+mp_decals                                : 1        : , "a"            :
 mp_defaultteam                           : 0        : , "sv"           :
 mp_disable_autokick                      : cmd      :                  : Prevents a userid from being auto-kicked
 mp_disable_respawn_times                 : 0        : , "sv", "nf", "rep" :
@@ -1302,7 +1302,7 @@ mp_teamplay                              : 0        : , "sv", "nf"     :
 mp_teams_unbalance_limit                 : 1        : , "sv", "nf", "rep" : Teams are unbalanced when one team has this many more players than the other team. (0 disables check)
 mp_time_between_capscoring               : 30       : , "sv"           : Delay between scoring of owned capture points.
 mp_timelimit                             : 0        : , "sv", "nf", "rep" : game time per map in minutes
-mp_tournament                            : 0        : , "sv", "nf", "rep" :
+mp_tournament                            : 1        : , "sv", "nf", "rep" :
 mp_tournament_allow_non_admin_restart    : 1        : , "sv"           : Allow mp_tournament_restart command to be issued by players other than admin.
 mp_tournament_restart                    : cmd      :                  : Restart Tournament Mode on the current level.
 mp_tournament_stopwatch                  : 1        : , "sv", "nf", "rep" :
@@ -1718,7 +1718,7 @@ r_decal_cover_count                      : 4        :                  :
 r_decal_cullsize                         : 1        :                  :
 r_decal_overlap_area                     : 0        :                  :
 r_decal_overlap_count                    : 3        :                  :
-r_decals                                 : 2048     :                  :
+r_decals                                 : 1        :                  :
 r_decalstaticprops                       : 1        :                  : Decal static props test
 r_depthoverlay                           : 0        : , "cheat", "cl"  : Replaces opaque objects with their grayscaled depth values. r_showz_power scales the output.
 r_DispBuildable                          : 0        : , "cheat"        :
@@ -1788,8 +1788,8 @@ r_flashlightambient                      : 0        : , "cheat", "cl"  :
 r_flashlightclip                         : 0        : , "cheat"        :
 r_flashlightconstant                     : 0        : , "cheat", "cl"  :
 r_flashlightculldepth                    : 1        :                  :
-r_flashlightdepthres                     : 512      : , "cl"           :
-r_flashlightdepthtexture                 : 1        :                  :
+r_flashlightdepthres                     : 1024     : , "cl"           :
+r_flashlightdepthtexture                 : 0        :                  :
 r_flashlightdrawclip                     : 0        : , "cheat"        :
 r_flashlightdrawdepth                    : 0        :                  :
 r_flashlightdrawfrustum                  : 0        : , "cl"           :
@@ -1912,7 +1912,7 @@ r_shadowdir                              : cmd      :                  : Set sha
 r_shadowdist                             : cmd      :                  : Set shadow distance
 r_shadowids                              : 0        : , "cheat"        :
 r_shadowmaxrendered                      : 32       : , "cl"           :
-r_shadowrendertotexture                  : 1        :                  :
+r_shadowrendertotexture                  : 0        :                  :
 r_shadows                                : 1        :                  :
 r_shadows_gamecontrol                    : -1       : , "cheat"        :
 r_shadowwireframe                        : 0        : , "cheat"        :
@@ -1943,6 +1943,7 @@ r_SnowStartSize                          : 1        : , "cheat", "cl"  : Snow.
 r_SnowWindScale                          : 0        : , "cheat", "cl"  : Snow.
 r_SnowZoomOffset                         : 384      : , "cheat", "cl"  : Snow.
 r_SnowZoomRadius                         : 512      : , "cheat", "cl"  : Snow.
+r_spewleaf                               : 0        :                  :
 r_spray_lifetime                         : 2        :                  : Number of rounds player sprays are visible
 r_sse2                                   : cmd      :                  : Enable/disable SSE2 code
 r_sse_s                                  : 1        : , "cl"           : sse ins for particle sphere create
@@ -2128,7 +2129,7 @@ sb_close_browser_on_connect              : 1        : , "a", "cl"      :
 sb_dontshow_maxplayer_warning            : 1        : , "a", "cl"      :
 sb_filter_incompatible_versions          : 1        :                  : Hides servers running incompatible versions from the server browser.  (Internet tab only.)
 sb_mod_suggested_maxplayers              : 24       :                  :
-sb_quick_list_bit_field                  : -1       :                  :
+sb_quick_list_bit_field                  : 0        :                  :
 sb_showblacklists                        : 0        :                  : If set to 1, blacklist rules will be printed to the console as they're applied.
 scene_async_prefetch_spew                : 0        : , "sv"           : Display async .ani file loading info.
 scene_clamplookat                        : 1        : , "sv"           : Clamp head turns to a max of 20 degrees per think.
@@ -2144,7 +2145,7 @@ scene_showmoveto                         : 0        : , "a", "sv"      : When mo
 scene_showunlock                         : 0        : , "a", "sv"      : Show when a vcd is playing but normal AI is running.
 +score                                   : cmd      :                  :
 -score                                   : cmd      :                  :
-scr_centertime                           : 5        : , "cl"           :
+scr_centertime                           : 0        : , "cl"           :
 screenshot                               : cmd      :                  : Take a screenshot.
 sensitivity                              : 1        : , "a", "cl"      : Mouse sensitivity.
 server_game_time                         : cmd      :                  : Gives the game time in seconds (server's curtime)
@@ -2449,7 +2450,7 @@ sv_maxusrcmdprocessticks                 : 24       : , "sv", "nf"     : Maximum
 sv_maxusrcmdprocessticks_warning         : -1       : , "sv"           : Print a warning when user commands get dropped due to insufficient usrcmd ticks allocated, number of seconds to throttle, negat
 sv_memlimit                              : 0        : , "cheat"        : If set, whenever the server is empty, if the total memory used by the server is greater than this # of megabytes, the server wi
 sv_mincmdrate                            : 10       : , "rep"          : This sets the minimum value for cl_cmdrate. 0 == unlimited.
-sv_minrate                               : 3500     : , "rep"          : Min bandwidth rate allowed on server, 0 == unlimited
+sv_minrate                               : 30000    : , "rep"          : Min bandwidth rate allowed on server, 0 == unlimited
 sv_minupdaterate                         : 10       : , "rep"          : Minimum updates per second that the server will allow
 sv_motd_unload_on_dismissal              : 0        : , "sv"           : If enabled, the MOTD contents will be unloaded when the player closes the MOTD.
 sv_mumble_positionalaudio                : 1        : , "rep", "cl"    : Allows players using Mumble to have support for positional audio.
@@ -2505,7 +2506,7 @@ sv_test_scripted_sequences               : 0        : , "sv"           : Tests f
 sv_teststepsimulation                    : 1        : , "sv"           :
 sv_thinktimecheck                        : 0        : , "sv"           : Check for thinktimes all on same timestamp.
 sv_timeout                               : 65       :                  : After this many seconds without a message from a client, the client is dropped
-sv_turbophysics                          : 0        : , "sv", "rep"    : Turns on turbo physics
+sv_turbophysics                          : 1        : , "sv", "rep"    : Turns on turbo physics
 sv_unlockedchapters                      : 99       : , "a"            : Highest unlocked game chapter.
 sv_use_steam_voice                       : 1        : , "rep"          : Enable/disable using Steam Voice instead of the old voice codec (if enabled, voice_inputfromfile will no longer function).
 sv_vehicle_autoaim_scale                 : 8        : , "sv"           :
@@ -2720,7 +2721,7 @@ tf_debug_damage                          : 0        : , "sv", "cheat"  :
 tf_debug_flamethrower                    : 0        : , "sv", "cheat"  : Visualize the flamethrower damage.
 tf_debug_placement_failure               : 0        : , "sv", "cheat"  :
 tf_decoy_lifetime                        : 5        : , "sv", "cheat"  : The lifetime of a decoy, in seconds
-tf_dingaling_pitchmaxdmg                 : 80       : , "a", "cl"      : Desired pitch of the hit sound when a maximum damage hit (>= 150 health) is done.
+tf_dingaling_pitchmaxdmg                 : 50       : , "a", "cl"      : Desired pitch of the hit sound when a maximum damage hit (>= 150 health) is done.
 tf_dingaling_pitchmindmg                 : 220      : , "a", "cl"      : Desired pitch of the hit sound when a minimal damage hit (<= 10 health) is done.
 tf_dingaling_volume                      : 1        : , "a", "cl"      : Desired volume of the hit sound.
 tf_dingalingaling                        : 1        : , "a", "cl"      : If set to 1, play a sound everytime you injure an enemy. The sound can be customized by replacing the 'tf/sound/ui/hitsound.wav
@@ -2849,7 +2850,7 @@ tf_mvm_bot_flag_carrier_movement_penalty : 0        : , "sv", "cheat", "rep" :
 tf_mvm_checkpoint                        : cmd      :                  : Save a checkpoint snapshot
 tf_mvm_checkpoint_clear                  : cmd      :                  : Clear the saved checkpoint
 tf_mvm_debugstats                        : cmd      :                  : Dumpout MvM Data
-tf_mvm_disconnect_on_victory             : 0        : , "sv", "rep"    : Enable to Disconnect Players after completing MvM
+tf_mvm_disconnect_on_victory             : 1        : , "sv", "rep"    : Enable to Disconnect Players after completing MvM
 tf_mvm_engineer_teleporter_uber_duration : 5        : , "sv", "cheat"  :
 tf_mvm_force_victory                     : cmd      :                  : Force immediate victory.
 tf_mvm_jump_to_wave                      : cmd      :                  : Jumps directly to the given Mann Vs Machine wave number
@@ -2858,7 +2859,7 @@ tf_mvm_miniboss_scale                    : 1        : , "sv", "cheat", "rep" : F
 tf_mvm_missioncyclefile                  : 0        : , "sv"           : Name of the .res file used to cycle mvm misisons
 tf_mvm_nextmission                       : cmd      :                  : Load the next mission
 tf_mvm_popfile                           : cmd      :                  : Change to a target popfile for MvM
-tf_mvm_respec_credit_goal                : 2000     : , "sv", "cheat", "rep" : Total amount of money the team must collect to earn a respec.
+tf_mvm_respec_credit_goal                : 2800     : , "sv", "cheat", "rep" : Total amount of money the team must collect to earn a respec.
 tf_mvm_respec_limit                      : 1        : , "sv", "cheat", "rep" : The total number of respecs a player can earn.
 tf_mvm_skill                             : 3        : , "sv", "cheat", "rep", "norecord" : Sets the challenge level of the invading bot army. 1 = easiest, 3 = normal, 5 = hardest
 tf_mvm_tabs_discovered                   : 3        : , "a", "cl"      : Remember how many times players have clicked tabs.
@@ -2886,7 +2887,7 @@ tf_pressandhold_minduration              : 2        : , "sv"           : The min
 tf_quickplay_beta_ask_percentage         : 0        : , "cl"           : Percentage of people who will be prompted to participate in beta quickplay.
 tf_quickplay_beta_preference             : -1       : , "cl"           : Preference to participate in beta quickplay: -1 = no preference, 0 = opt out, 1 = opt in
 tf_quickplay_lastviewedmode              : 1        : , "a", "cl"      :
-tf_recent_achievements                   : 1301     : , "a", "cl"      :
+tf_recent_achievements                   : 2352     : , "a", "cl"      :
 tf_remember_activeweapon                 : 0        : , "a", "user", "cl" : Setting this to 1 will make the active weapon persist between lives.
 tf_remember_lastswitched                 : 0        : , "a", "user", "cl" : Setting this to 1 will make the 'last weapon' persist between lives.
 tf_replay_pyrovision                     : 0        : , "a", "cl"      : When on, replays will be seen with Pyrovision active
@@ -2965,7 +2966,7 @@ tf_weapon_criticals_bucket_default       : 300      : , "sv", "cheat", "rep" :
 tf_weapon_select_demo_start_delay        : 1        : , "a", "cl"      : Delay after spawning to start the weapon bucket demo.
 tf_weapon_select_demo_time               : 0        : , "a", "cl"      : Time to pulse each weapon bucket upon spawning as a new class. 0 to turn off.
 tf_wipe_attributes                       : cmd      :                  : Clear all TF-specific attributes of selected area.
-think_limit                              : 10       : , "sv", "rep"    : Maximum think time in milliseconds, warning is printed if this is exceeded.
+think_limit                              : 0        : , "sv", "rep"    : Maximum think time in milliseconds, warning is printed if this is exceeded.
 thirdperson                              : cmd      :                  : Switch to thirdperson camera.
 thirdperson_mayamode                     : cmd      :                  : Switch to thirdperson Maya-like camera controls.
 thirdperson_platformer                   : 0        : , "cl"           : Player will aim in the direction they are moving.
@@ -3083,7 +3084,7 @@ viewanim_load                            : cmd      :                  : load an
 viewanim_reset                           : cmd      :                  : reset view angles!
 viewanim_save                            : cmd      :                  : Save current animation to file
 viewanim_test                            : cmd      :                  : test view animation
-viewmodel_fov                            : 97       : , "a", "cl"      :
+viewmodel_fov                            : 105      : , "a", "cl"      :
 viewmodel_fov_demo                       : 54       : , "a", "cl"      :
 violence_ablood                          : 0        :                  : Draw alien blood
 violence_agibs                           : 0        :                  : Show alien gib entities
@@ -3112,7 +3113,7 @@ voice_scale                              : 0        : , "a"            :
 voice_serverdebug                        : 0        : , "sv"           :
 voice_showchannels                       : 0        :                  :
 voice_showincoming                       : 0        :                  :
-voice_steal                              : 2        :                  :
+voice_steal                              : 1        :                  :
 voice_writevoices                        : 0        :                  : Saves each speaker's voice data into separate .wav files
 +voicerecord                             : cmd      :                  :
 -voicerecord                             : cmd      :                  :
@@ -3249,4 +3250,4 @@ youtube_username                         : 0        : , "a", "cl"      : Usernam
 -zoom                                    : cmd      :                  :
 zoom_sensitivity_ratio                   : 1        : , "cl"           : Additional mouse sensitivity scale factor applied when FOV is zoomed in.
 --------------
-3248 total convars/concommands
+3249 total convars/concommands

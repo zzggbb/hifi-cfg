@@ -10,7 +10,7 @@ classes = [
         "spy"
     ]
 
-for i in range(len(classes)):
+for i in range(9):
     with open("../" + classes[i] + ".cfg","w") as f:
-        text = "@master; 1-{0}_master".format(i+1)
+        text = "@master; c{0}_master".format(i+1)
         f.write(text)
